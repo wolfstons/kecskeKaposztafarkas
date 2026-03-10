@@ -18,8 +18,7 @@ function megjelenit(lista = [], szuloelem, hely = "") {
   /* a program aktuális állapotát jelenít meg*/
   let htmlszoveg = "";
   for (let index = 0; index < lista.length; index++) {
-    htmlszoveg += `<img src="${lista[index]}" id=${hely}_${index}">`;
-  }
+    htmlszoveg += `<img src="${lista[index]}" id="${hely}_${index}">`;  }
 
   szuloelem.innerHTML = htmlszoveg;
 }
