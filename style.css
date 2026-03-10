@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box
+    ;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "h h h"
+    "b a j"
+    "f f f";
+}
+
+header{
+    grid-area: h;
+    
+}
+
+#bal{
+    grid-area: b;
+}
+
+#jobb{
+    grid-area: j;
+}
+
+article{
+    grid-area: a;
+    background-color: blue;
+}   
+
+footer{
+    grid-area: f;
+}
+
+header, #bal, #jobb, footer{
+    border: 1px solid black;
+    padding: 10px;
+}
+img{
+    width: 40%;
+}
+
+#csonak{
+    background-repeat: no-repeat;
+    height: 400px;
+    background: cover;
+    background-image: url("kepek/csonak.png");
+    background-position: left;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+
+    
+
+}
+
